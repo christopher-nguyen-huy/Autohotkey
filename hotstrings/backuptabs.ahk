@@ -10,7 +10,7 @@ Send !p
 Send ^c
 opentabs := Clipboard
 Send !p
-Send %homepage%
+SendInput %homepage%
 Send {Esc}
 opentabs := RegExReplace(opentabs,"\|","`r`n")
 Clipboard := opentabs
